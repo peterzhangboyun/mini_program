@@ -1,0 +1,33 @@
+<!--pages/主页/主页.wxml-->
+<view class='content'>
+
+  <view class='poster'>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class='slide-image' style='width:100%;height:120%;'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  
+  <view class="section">
+    <view class="section_title">选择您的登陆身份: </view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          您的身份是: {{array[index]}}
+        </view>
+      </picker>
+      <view class="btn-area">
+        <button type="primary" ontap="next">Next</button>
+      </view>
+  </view>
+
+  <import src='../Template/template.wxml'></import>
+  
+  <view>
+    <template is='searchlist' data="{{array}}"></template>
+  </view>
+  
+</view>
+

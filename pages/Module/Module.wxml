@@ -1,0 +1,10 @@
+<!--pages/module/module.wxml-->
+<view class="doc-title" wx:for="{{ModuleArray}}">
+  <text class="{{item.styleClass}}" ontap="Module">{{item.str}}</text>
+  <view class="hr"></view>
+</view>
+
+<view>
+  <button class="Home" ontap="Home">Return To Home</button>
+</view>
+

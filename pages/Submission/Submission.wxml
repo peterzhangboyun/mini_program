@@ -1,0 +1,23 @@
+<!--pages/提交情况/提交情况.wxml-->
+<view class="doc-title" wx:for="{{SectionArray}}">
+  <text class="{{item.styleClass}}" ontap="Section">{{item.str}}</text>
+
+  <button class="Edit" ontap="Edit">Edit</button>
+
+  <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{AttendArray}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" color="orange"/>{{item.value}}
+  </label>
+  </radio-group>
+  
+  <view class="hr"></view>
+</view>
+
+
+<view>
+  <button formType='submit' class="Save" ontap="save_status">Save</button>
+</view>
+ 
+<view>
+  <button class="Home" ontap="Home">Return To Home</button>
+</view>

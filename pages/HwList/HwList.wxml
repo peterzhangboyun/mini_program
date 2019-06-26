@@ -1,0 +1,11 @@
+<!--pages/作业列表/作业列表.wxml-->
+<view class="doc-title" wx:for="{{AssignmentArray}}">
+  <text class="{{item.styleClass}}" catchtap="Assignment" data-HwList="{{item}}">{{item.title}} deadline:{{item.deadline}}</text>
+  <view class="hr"></view>
+</view>
+
+<view>
+  <button class="Home" ontap="Home">Return To Home</button>
+</view>
+
+ 

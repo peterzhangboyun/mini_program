@@ -1,0 +1,68 @@
+<!--pages/HwSubm.wxml-->
+
+<view class='page_hd'>
+  <view class="page_title">{{homework_info.title}}</view>
+</view>
+
+<view class="page__bd">
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-article">
+        <view class="weui-article__p">
+          <text>{{homework_info.content}}</text>     
+        </view>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <text>Due: {{homework_info.deadline}}</text> 
+    </view>
+    <view class="weui-cell">
+      <input bindinput='bindKeyInput' placeholder='Enter Answer Here'></input>
+    </view>
+  </view>
+  <scroll-view>
+        <view class="common-list">
+          <block wx:for-items="{{recordFiles}}" wx:key="{{index}}">
+            <view class="board">
+              <view class="cell"  >
+                  <view class="cell-bd" bindtap="playRecord" bindlongpress="delRecord" id="{{item.tempFilePath}}" > 
+                      <view class="date">存储路径: {{item.tempFilePath}}</view>
+                      <view class="date" >音频时间: {{item.duration}}</view>
+                      <view class="date">音频大小: {{item.fileSize}}KB</view>
+                  </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+</view>
+
+<view class="page__bd">
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="weui-uploader">
+            <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">Images</view>
+                <view class="weui-uploader__info">{{imageFiles.length}}/9</view>
+            </view>
+            <view class="weui-uploader__bd">
+                <view class="weui-uploader__files" id="uploaderFiles">
+                  <block wx:for-items="{{imageFiles}}" wx:key="{{index}}">
+                      <view class="weui-uploader__file" bindtap="previewImage" bindlongpress="delImage" id="{{item}}">
+                          <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                      </view>
+                  </block>
+                <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="loadImage"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  <button class="weui-btn" type="warn" bindtouchstart="startRecord" bindtouchend="stopRecord">Press to Record</button>
+  <button class="weui-btn" type='primary'  bindtap="submit">Submit</button>
+</view>

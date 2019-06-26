@@ -1,0 +1,14 @@
+<!--pages/课程/课程.wxml-->
+<view class="doc-container">
+  <view class="doc-title">List of classes</view>
+    <block wx:for="{{classArray}}">
+      <view class="list" catchtap="course" data-course="{{item}}">
+        <text class="Text">{{item.course_name}}</text>
+      </view>
+    </block>
+</view>
+   
+
+
+
+ 

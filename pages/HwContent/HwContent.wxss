@@ -1,0 +1,39 @@
+/* pages/Homework内容/Homework内容.wxss */
+.doc-title{
+  font-weight: bolder;
+  font-size: x-large;
+  position: relative;
+  margin: 10px 15px;
+  line-height: 25px;
+  color: #070111;
+  text-align: center;
+}
+.doc-content{
+  position: relative;
+  margin: 10px 15px;
+  margin-bottom: 150px;
+  line-height: 25px;
+  color: #414141;
+  font-weight: bold; 
+}
+.hr{
+  height: 3px;
+  width: 375px;
+  background-color: #d4d4d3;
+  margin: 10px;
+  margin-left: 0px;
+}
+.upload{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #0178ff;
+  color: white;
+  font-size: large;
+}
+.Home{
+  margin-top: 10%;
+  background-color: #f1da08;
+}

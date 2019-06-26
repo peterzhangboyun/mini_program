@@ -1,0 +1,33 @@
+<!--pages/作业提交/作业提交.wxml-->
+
+<view class="doc-title">
+  <text>Assignment</text>
+</view>
+<view class="hr"></view> 
+
+ 
+<view class="doc-content">
+  <text>Description:</text>
+  <text></text>
+</view>
+<view class="hr"></view>
+ 
+
+<view class="doc-content">
+  <input placeholder="Answer:"></input>
+</view>
+<view class="hr"></view>
+
+
+<view>
+  <button formType='submit' class="upload" bindtap="Upload">Upload</button>
+  <block wx:for="{{tmpImageUrl}}" wx:key="{{index}}">
+    <image src='{{tmpImageUrl[index]}}' mode='aspectFit' bindload='tmpImageLoaded' style='width:{{flexImageSize.width}}; height:{{flexImageSize.height}};'></image>
+  </block>
+  <button formType='submit' class="submit">Submit</button>
+</view>
+
+<view>
+  <button class="Home" ontap="Home">{{Home}}</button> 
+</view>
+ 

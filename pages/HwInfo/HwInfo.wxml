@@ -1,0 +1,16 @@
+<!--pages/Homework信息/Homework信息.wxml-->
+<view class="doc-title" wx:for="{{AssignmentArray}}">
+  <text class="{{item.styleClass}}" ontap="View">{{item.str}}</text>
+  <view class="hr"></view>
+</view>
+
+<view>
+  <button class="Add" ontap="Add">{{Add}}</button>
+</view>
+
+
+<view>
+  <button class="Home" ontap="Home">Return To Home</button>
+</view>
+
+ 

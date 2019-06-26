@@ -1,0 +1,51 @@
+/* pages/提交情况/提交情况.wxss */
+.doc-title{
+  font-weight: bold;
+  font-size: larger;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0%;
+  line-height: 25px;
+  color: #414141;
+}
+.list_title{
+  margin-left: 20px;
+}
+.hr{
+  height: 3px; 
+  width: 375px;
+  background-color: #d4d4d3;
+  margin: 20px 5px;
+  margin-left: 0%;
+}
+.Home{
+  margin-top: 10%;
+  background-color: #f1da08;
+}
+.Edit{
+  height: 30px;
+  width: 75px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold; 
+  background-color: #2d7a40;
+  color: white;
+  float: right;
+  margin-right: 3%;
+}
+.radio-group{
+  float: right;
+  margin-right: 5%;
+}
+.Save{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #0178ff;
+  color: white;
+  font-size: large;
+}

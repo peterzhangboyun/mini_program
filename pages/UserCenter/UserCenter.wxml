@@ -1,0 +1,28 @@
+<!--pages/用户中心/用户中心.wxml-->
+<view class="page">
+  <view class="page_hd">
+    <view class="section_ctn">
+      <image style="width:100px; height:100px;" src="../images/usercenter/用户.png" bindtap="Upload"></image>
+      <view>Welcome</view>   
+    </view> 
+  </view>
+  <view class="page_bd">
+    <view class="section">
+      <input type="text" bindinput="bindUsernameInput" placeholder="Username" auto-focus/>
+    </view>
+    <view class="section">
+      <input type="password" bindinput="bindPasswordInput" placeholder="Password"/>
+    </view>
+    <view class="section">
+      <view class="btn-area">
+        <button type="primary" bindtap="login">Login</button>
+      </view>
+    </view>
+    <view class="section">
+      <view class="btn-area">
+        <button type="default" bindtap="forgetpassword">Forgot Password</button>
+      </view>
+    </view>
+  </view>
+</view>
+

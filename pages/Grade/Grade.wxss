@@ -1,0 +1,16 @@
+/* pages/Grade/Grade.wxss */
+.doc-title{
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0%;
+  line-height: 25px;
+  color: #0846f1;
+}
+.list_title{
+  margin-left: 20px;
+}
+.Home{
+  margin-top: 30px;
+  background-color: #f1da08;
+}

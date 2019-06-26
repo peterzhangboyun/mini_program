@@ -1,0 +1,62 @@
+/* pages/HwSubm.wxss */
+
+.item{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.doc-title{
+  font-weight: bolder;
+  font-size: 20pt;
+  position: relative;
+  margin: 10px 15px;
+  line-height: 25px;
+  color: #353535;
+  text-align: center;
+}
+
+.doc-content{
+  position: relative;
+  font-size: 14pt;
+  margin: 10px 15px;
+  line-height: 25px;
+  color: #353535;
+  font-weight: bold; 
+}
+
+.hr{
+  height: 3px;
+  width: 375px;
+  background-color: #d4d4d3;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.upload{
+  margin: 10px 15px;
+  height: 35px;
+  width: 75px;
+  text-align: center;
+  display: flex;
+  flex-direction: column, row;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #0178ff;
+  color: white;
+  font-size: large;
+}
+
+.submit{
+  margin-top: 30px;
+  width: 100px;
+  background-color: #daf108;
+  font-weight: bold;
+} 
+
+.Home{
+  margin-top: 50px;
+  background-color: #f1da08;
+}
+

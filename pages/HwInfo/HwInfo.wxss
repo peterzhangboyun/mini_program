@@ -1,0 +1,27 @@
+/* pages/Homework信息/Homework信息.wxss */
+.doc-title{
+  font-weight: bold;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0%;
+  line-height: 25px;
+  color: #414141;
+}
+.list_title{
+  margin-left: 25px;
+}
+.hr{
+  height: 3px;
+  width: 375px;
+  background-color: #d4d4d3;
+  margin: 10px;
+  margin-left: 0%;
+}
+.Home{
+  margin-top: 5%;
+  background-color: #f1da08;
+}
+.Add{
+  background-color: #1398f1
+}

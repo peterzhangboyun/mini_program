@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/UserCenter/UserCenter",
+    "pages/CrsList/CrsList",
+    "pages/Module/Module",
+    "pages/HwList/HwList",
+    "pages/GrdList/GrdList",
+    "pages/Announcement/Announcement",
+    "pages/ModuleInfo/ModuleInfo",
+    "pages/Homework/Homework",
+    "pages/HwSubm/HwSubm",
+    "pages/Grade/Grade",
+    "pages/AnnContent/AnnContent",
+    "pages/ChangePassword/ChangePassword",
+    "pages/ForgotPassword/ForgotPassword"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9E9E9E",
+    "navigationBarTitleText": "Jovial",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#CDE000",
+    "onReachBottomDistance": 10,
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "white",
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/Module/Module",
+        "text": "课间",
+        "iconPath": "pages/images/tabbar/teacher.png",
+        "selectedIconPath": "pages/images/tabbar/teacher.png"
+      },
+      {
+        "pagePath": "pages/HwList/HwList",
+        "text": "作业",
+        "iconPath": "pages/images/tabbar/Homework.png",
+        "selectedIconPath": "pages/images/tabbar/Homework.png"
+      },
+      {
+        "pagePath": "pages/ModuleInfo/ModuleInfo",
+        "text": "课程",
+        "iconPath": "pages/images/tabbar/Grade.png",
+        "selectedIconPath": "pages/images/tabbar/Grade.png"
+      },
+      {
+        "pagePath": "pages/GrdList/GrdList",
+        "text": "成绩",
+        "iconPath": "pages/images/tabbar/Grade.png",
+        "selectedIconPath": "pages/images/tabbar/Grade.png"
+      },
+      {
+        "pagePath": "pages/Announcement/Announcement",
+        "text": "通知",
+        "iconPath": "pages/images/tabbar/Announcement.png",
+        "selectedIconPath": "pages/images/tabbar/Announcement.png"
+      }
+    ]
+  }
+}

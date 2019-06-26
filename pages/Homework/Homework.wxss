@@ -1,0 +1,64 @@
+/* pages/作业提交/作业提交.wxss */
+.search{
+  display: flex;
+  flex-direction: row;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.count{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999999;
+} 
+.doc-title{
+  font-weight: bolder;
+  font-size: x-large;
+  position: relative;
+  margin: 10px 15px;
+  line-height: 25px;
+  color: #070111;
+  text-align: center;
+}
+.doc-content{
+  position: relative;
+  margin: 10px 15px;
+  margin-bottom: 150px;
+  line-height: 25px;
+  color: #414141;
+  font-weight: bold; 
+}
+.hr{
+  height: 3px;
+  width: 375px;
+  background-color: #d4d4d3;
+  margin: 10px;
+  margin-left: 0px;
+}
+.upload{
+  margin: 10px 15px;
+  height: 35px;
+  width: 75px;
+  text-align: center;
+  display: flex;
+  flex-direction: column, row;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #0178ff;
+  color: white;
+  font-size: large;
+}
+.submit{
+  margin-top: 30px;
+  width: 100px;
+  background-color: #daf108;
+  font-weight: bold;
+} 
+.Home{
+  margin-top: 50px;
+  background-color: #f1da08;
+}

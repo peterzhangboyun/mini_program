@@ -1,0 +1,11 @@
+<!--pages/Announcement/Announcement.wxml-->
+<view class="doc-title" wx:for="{{AnnouncementArray}}">
+  <text class="{{item.styleClass}}" catchtap="Announcement" data-announce="{{item}}">{{item.time}}</text>
+  <view class="hr"></view>
+</view>
+
+<view>
+  <button class="Home" ontap="Home">Return To Home</button>
+</view>
+
+ 

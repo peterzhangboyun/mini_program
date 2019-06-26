@@ -1,0 +1,29 @@
+/* pages/主页/主页.wxss */
+.item{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.title{
+  font-weight: bold;
+}
+.count{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999999;
+}
+.picker{
+  margin-top: 200rpx;
+  margin-bottom: 200rpx;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-position: center;
+  background-color: #dad86456;
+  padding: 10px;
+}
+.section_title{
+  margin-top: 30rpx;
+  margin-left: 30%;
+}

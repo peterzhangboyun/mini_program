@@ -1,0 +1,11 @@
+<!--pages/GrdList/GrdList.wxml-->
+<view class="doc-title" wx:for="{{GradeArray}}">
+  <text class="{{item.styleClass}}" ontap="Grade">{{item.str}}</text>
+  <view class="hr"></view>
+</view>
+
+<view>
+  <button class="Home" ontap="Home">Return To Home</button>
+</view>
+
+ 

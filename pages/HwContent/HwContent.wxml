@@ -1,0 +1,22 @@
+<!--pages/Homework内容/Homework内容.wxml-->
+<view class="doc-title">
+  <text>Assignment</text>
+</view>
+<view class="hr"></view> 
+
+
+<view class="doc-content">
+  <input placeholder="Description:"></input>
+</view>
+<view class="hr"></view>
+
+<view>
+  <button formType='submit' class="upload">Upload</button>
+</view>
+
+<view>
+  <button class="Home" ontap="Home">{{Home}}</button> 
+</view>
+
+
+

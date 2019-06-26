@@ -1,0 +1,2 @@
+<!--pages/AnnContent/AnnContent.wxml-->
+<text>{{content}}</text>
